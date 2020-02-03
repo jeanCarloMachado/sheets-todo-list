@@ -2,6 +2,7 @@
 import click
 
 from sheets_todo_list.done import Done
+from sheets_todo_list.projects import Projects
 from sheets_todo_list.insert_content import InsertContent
 
 
@@ -40,6 +41,12 @@ def clean_done_today():
     """
     Done().clean_today()
 
+@cli.command()
+def sort_projects():
+    """
+    Cleans the done today section
+    """
+    Projects().sort()
 
 if __name__ == '__main__':
     cli()

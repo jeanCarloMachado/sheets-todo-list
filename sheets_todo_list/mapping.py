@@ -16,6 +16,11 @@ class Mapping:
                 'col': 'C',
                 'top': 'C3',
                 'range': 'C3:C20'
+            },
+            'projects': {
+                'start_col': 'F',
+                'sort_line': 'F1:Z1',
+                'range': 'F1:Z10'
             }
         }
     def column_meta(self, column_name, meta):
